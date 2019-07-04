@@ -1,0 +1,15 @@
+{
+  "name": "zaza",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Stephan Schreiber <septh@sfr.fr> (https://github.com/Septh)",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^1.16.4"
+  }
+}
