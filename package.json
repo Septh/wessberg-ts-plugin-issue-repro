@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "rollup": "rollup -c",
-    "tsc": "tsc test-ts/index.ts -outfile ./bundle-tsc.js -module amd"
+    "rollup": "tsc test-ts/index.ts -outdir ./tsc-out --target es2018 -module es2015 && rollup -c",
+    "tsc": "tsc test-ts/index.ts -outfile ./bundle-tsc.js --target es2018 -module amd"
   },
   "keywords": [],
   "license": "MIT",
