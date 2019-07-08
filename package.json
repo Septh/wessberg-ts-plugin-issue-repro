@@ -1,15 +1,18 @@
 {
-  "name": "zaza",
+  "name": "test",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "rollup": "rollup -c",
+    "tsc": "tsc test-ts/index.ts -outfile ./bundle-tsc.js -module amd"
   },
   "keywords": [],
-  "author": "Stephan Schreiber <septh@sfr.fr> (https://github.com/Septh)",
   "license": "MIT",
   "devDependencies": {
-    "rollup": "^1.16.4"
+    "@wessberg/rollup-plugin-ts": "^1.1.59",
+    "rollup": "^1.16.4",
+    "rollup-plugin-typescript": "^1.0.1",
+    "typescript": "^3.5.2"
   }
 }
