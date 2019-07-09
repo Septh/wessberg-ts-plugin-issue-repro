@@ -1,7 +1,12 @@
 
 import * as math from './math'
 
-export class Test {
+export interface ITest {
+    // defaultFactor: number
+    mul: () => number
+}
+
+export class Test implements ITest {
     public static defaultFactor = 1
     public mul() {
         return math.mult(2)
